@@ -1,0 +1,4 @@
+docker run -it -d --name debian_bash debian
+docker exec debian_bash bash -c "apt-get update -y"
+docker exec debian_bash bash -c "apt-get install build-essential -y"
+docker exec debian_bash bash -c "apt-get install git -y"
